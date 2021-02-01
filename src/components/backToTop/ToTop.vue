@@ -1,7 +1,7 @@
 <template>
   <transition name="moveR">
-    <div class="scrollTop" v-show="showTop" @click="toTop">
-      <svg-icon iconClass="backtotop" class="backtotop" />
+    <div class="scroll-top" v-show="showTop" @click="toTop">
+      <svg-icon iconClass="backtotop" class="back-to-top" />
     </div>
   </transition>
 </template>
@@ -20,7 +20,7 @@ export default {
     }
   },
   computed: {
-    showTop: function () {
+    showTop () {
       return this.scrollTop > 200 ? true : false
     }
   },
@@ -65,11 +65,11 @@ export default {
 </script>
 
 <style scoped>
-.backtotop {
+.back-to-top {
   width: 2.5rem;
   height: 2.5rem;
 }
-.scrollTop {
+.scroll-top {
   right: 0;
   position: fixed;
   bottom: 5rem;
